@@ -1,11 +1,14 @@
-num=int(input("Enter Number"))
+# Write a program to check whether a number is prime or not.
+
+num=int(input("Enter a number to check a prime number is this or not"))
 count=0
-i=1
-while(i<=num):
-    if(num%i==0):
-        count=count+1
-    i=i+1
-if(count==2):
-    print("prime") 
+i=num
+while i>=1:
+        if num%i==0:
+                count=count+1
+        i=i-1
+if count==2:    
+        print("prime")
 else:
-    print("Not prime")       
+        print("Not Prime")    
+        

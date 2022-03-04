@@ -1,0 +1,11 @@
+# 11). Write a program to find the sum of the digits of a number accepted from the user.
+Number = int(input("Please Enter any Number: "))
+Sum = 0
+
+while Number > 0:
+    Reminder = Number % 10
+    Sum = Sum + Reminder
+    Number = Number //10
+
+print("\n Sum of the digits of Given Number",Sum)
+
